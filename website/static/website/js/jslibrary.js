@@ -2,7 +2,7 @@
 function onload(){
   loadCookie();
 }
-//projectnav
+
 $("#projwrapper").ready(function(){      
   $("#projwrapper > :first-child").addClass("activeproject")
 })
@@ -91,7 +91,9 @@ function updateExperienceDisplay(){
         $(".exptitle").text(expjson[e]['fields']['title']);
         $(".exptimespan").text(expjson[e]['fields']['timespan']);
         $(".explocation").text(expjson[e]['fields']['location']);
+        console.log(expjson[e]['fields']['imageurl'])
         if(expjson[e]['fields']['imageurl'].startsWith("http")){
+          
           $("#expimg").attr("src", expjson[e]['fields']['imageurl'])
           $("#expimgdesktop").attr("src", expjson[e]['fields']['imageurl'])
         }
