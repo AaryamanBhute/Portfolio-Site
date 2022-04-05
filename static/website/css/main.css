@@ -153,7 +153,6 @@ input:checked + .slider:before {
 
 #welcomewrapper{
   display: flex;
-  width: 100%;
   justify-content: center;
   transition: all 0.5s ease 0.1s;
 }
@@ -688,7 +687,6 @@ fieldset { border-top:1px solid var(--main-text-color); }
  
 .selectionnav::-webkit-scrollbar-thumb{
   width: 100px;
-  height: 3px;
   background-color: var(--main-text-color);
 }
 
