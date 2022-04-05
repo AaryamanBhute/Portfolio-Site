@@ -35,3 +35,6 @@ class Contact(models.Model):
     name = models.CharField(max_length=50)
     imageurl = models.TextField()
     link = models.TextField()
+
+class Resume(models.Model):
+    link = models.TextField()

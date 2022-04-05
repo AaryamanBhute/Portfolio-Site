@@ -3,7 +3,7 @@ from os import stat
 from urllib import response
 from django.conf import settings
 from django.shortcuts import render
-from .models import Contact, Education, Experience, Project
+from .models import Contact, Education, Experience, Project, Resume
 from django.core import serializers
 from django.templatetags.static import static
 
@@ -13,11 +13,13 @@ def home(request):
 	experiences = Experience.objects.all()
 	projects = Project.objects.all()
 	contacts = Contact.objects.all()
+	resume = Resume.objects.all()[0]
 	dic = {
 	"educations": educations,
 	"experiences": experiences,
 	"projects": projects,
 	"contacts": contacts,
+	"resume": resume,
 	}
 	jexp = serializers.serialize("json", Experience.objects.all())
 	jproj = serializers.serialize("json", Project.objects.all())
