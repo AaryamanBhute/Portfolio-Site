@@ -423,7 +423,7 @@ input:checked + .slider:before {
 }
 
 .accentfilter{
-  filter: var(--accent-rotation);
+  filter: var(--accent-color);
 }
 
 .regularfilter{
