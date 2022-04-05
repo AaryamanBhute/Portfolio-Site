@@ -402,8 +402,8 @@ input:checked + .slider:before {
 .mainlogodesktop{
   position: absolute;
   max-height: 2em;
-  top: 1.5vh;
-  left: 1vw;
+  align-self: center;
+  left: 30px;
   transition: all 0.5s ease 0.1s;
 }
 
