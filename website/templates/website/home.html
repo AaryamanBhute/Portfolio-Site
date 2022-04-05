@@ -1,0 +1,294 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'website/css/main.css' %}">
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
+    <title>Aaryaman Bhute - Website</title>
+    <script src="{% static 'website/js/headercookie.js' %}"></script>
+    <script src="{% static 'website/js/fadein.js' %}"></script>
+
+  </head>
+  <body onload="onload()">
+    <div id="introwrapper">
+      <div id="navbar">
+        <div id="navwrapper">
+          <div id="sidebar">
+            <ul class="sidebarlist">
+              <li><div class="center"><img src="https://i.ibb.co/F4PcQXM/alogoouter.png" alt="alogoouter" class="mainlogo rotate accentfilter"><img src="https://i.ibb.co/n8VNpyq/alogoinner.png" alt="alogoinner" class="mainlogo regularfilter"></div></li>
+              <li><a href="#aboutmarker" class="hover-underline-animation"><span class="highlight">1.</span>About</a></li>
+              <li><a href="#educationsmarker" class="hover-underline-animation"><span class="highlight">2.</span>Education</a></li>
+              <li><a href="#experiencesmarker" class="hover-underline-animation"><span class="highlight">3.</span>Experience</a></li>
+              <li><a href="#projectsmarker" class="hover-underline-animation"><span class="highlight">4.</span>Projects</a></li>
+              <li><a href="#contactsmarker" class="hover-underline-animation"><span class="highlight">5.</span>Contact</a></li>
+              <li><div id="resumebuttonmobile"><span>Resume</span></div></li>
+            </ul>
+          </div>
+          <div id="navlogo" onclick="sidebartoggle()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          
+        </div>
+  
+        <div id="navmenu">
+          <a><div class="center"><img src="https://i.ibb.co/F4PcQXM/alogoouter.png" alt="alogoouter" class="mainlogodesktop rotate accentfilter"><img src="https://i.ibb.co/n8VNpyq/alogoinner.png" alt="alogoinner" class="mainlogodesktop regularfilter"></div></a>
+          <a href="#aboutmarker" class="hover-underline-animation"><span class="highlight">1.</span>About</a>
+          <a href="#educationsmarker" class="hover-underline-animation"><span class="highlight">2.</span>Education</a>
+          <a href="#experiencesmarker" class="hover-underline-animation"><span class="highlight">3.</span>Experience</a>
+          <a href="#projectsmarker" class="hover-underline-animation"><span class="highlight">4.</span>Projects</a>
+          <a href="#contactsmarker" class="hover-underline-animation"><span class="highlight">5.</span>Contact</a>
+          <div id="resumebutton"><span>Resume</span></div>
+        </div>
+        
+        <div class="switch">
+          <label class="theme-switch" for="checkbox">
+              <input type="checkbox" id="checkbox" />
+              <div class="slider round"></div>
+          </label>
+        </div>
+      </div>
+      <div id="centermenu">
+        <div id="welcomewrapper">
+          <div id="textwrapper">
+            <p id="hilabel">Hi</p>
+            <p id="namelabel">I'm Aaryaman</p>
+            <p id="welcomelabel">WELCOME</p>
+            <p id="subtitle"> Checkout my projects, experiences, and educations in more detail than my resume!</p>
+          </div>
+        </div> 
+      </div>
+  
+      <div class="center">
+        <div class="arrow-down">
+          <div class="left"></div>
+          <div class="right"></div>
+        </div>
+      </div>
+    </div>
+    <div id="aboutmarker" style="height: 25px;"></div>
+    <div class="center fade">
+      <div class="center sectiontitle bordertop">
+        <p class="titlewrapper"><span class="title highlight">1. </span><span class="title textcolor">About Me</span></p>
+        <div class="titlebackground"style=""></div>
+      </div>
+    </div>
+    <div id="about" class="fade">
+      <div class="center">
+        <div class="entrywrapper">
+          <div id="entrymanager">
+            <div class="center" style="margin-bottom: 20px;">
+              <div class="card">
+                <div class="card_image"> <img src="{% static 'website/images/selfpic.png' %}" /> </div>
+              </div>
+            </div>
+            <div class="descriptionwrapper center">
+              <p>Hi! My name is Aaryaman, I am currently pursuing 
+                my computer science degree at UCLA. After writing
+                the standard "Hello World" program in elementary 
+                school, I fell in love with computer science and the
+                potential to create my own world in a sea of 1s and 0s.
+              </p>
+              <br>
+              <p>
+                This website highlights my development and experiences
+                as a computer scientist, I hope you enjoy your time here!
+              </p>
+              <br>
+              <p class="aboutskillsheader">These are some technologies I've worked with:</p>
+              <div class="center">
+                <ul id="skills">
+                  <li>Python</li>
+                  <li>JavaScript/JQuery</li>
+                  <li>Django</li>
+                  <li>HTML/CSS</li>
+                  <li>C++</li>
+                  <li>Java</li>
+                  <li>C++</li>
+                  <li>Java</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="educationsmarker" style="height: 25px;"></div>
+    <div class="center fade">
+      <div class="center sectiontitle bordertop">
+        <p class="titlewrapper"><span class="title highlight">2. </span><span class="title textcolor">Education</span></p>
+        <div class="titlebackground"style=""></div>
+      </div>
+    </div>
+    <div id="educations" class="fade">
+      {% for education in educations %}
+      <div class="education">
+        <div class="center">
+          <div class="entrywrapper">
+            <div id="entrymanager">
+              <div class="descriptionwrapper center">
+                <p class="name">{{ education.name}}</p>
+                <p class="title">{{ education.title}}</p>
+                <p class="timespan">{{ education.timespan}}</p>
+                <p>{{ education.description}}</p>
+              </div>
+              <div class="center cardmargin">
+                <div class="card">
+                  <div class="card_image"> <img onclick="location.href = '{{education.link}}';"src="{% static ''|add:education.imageurl %}" /> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div id="experiencesmarker" style="height: 25px;"></div>
+    <div class="center fade">
+      <div class="center sectiontitle bordertop">
+        <p class="titlewrapper"><span class="title highlight">3. </span><span class="title textcolor">Experiences</span></p>
+        <div class="titlebackground"style=""></div>
+      </div>
+    </div>
+    <div class="experiencesmarker"></div>
+    <div id="experiencesmobile" class="fade">
+      <div class="center">
+        <div class="selectionmenu">
+          <div class="paddingwrapper">
+            <div class="selectionnav" id="mobilenav">
+              {% for experience in experiences%}
+              <p class="experiencemarker" onclick="setToActiveMarker(this)">{{experience.shortname}}</p>
+              {% endfor %}
+            </div>
+          </div>
+          
+          <div class="descriptionwrapper center" id="expdescription">
+            <div class="center imgwrapper">
+              <img id="expimg" onclick="location.href = '{{experiences.0.link}}';" src="{% static ''|add:experiences.0.imageurl %}" />
+            </div>
+            <div class="titlelistwrapper">
+              <p class="name"><span class="exptitle">{{ experiences.0.title}}</span> <br> <span class="atsign" style="color: var(--other-accent-2);">@</span> <span class="expname"  style="color: var(--other-accent-2);">{{ experiences.0.name}}</span></p>
+              <ul class="expdesclist"></ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="experiencesdesktop" class="fade">
+      <div class="center">
+        <div class="selectionmenu">
+          <div class="paddingwrapper">
+            <div class="selectionnav" id="mobilenav">
+              {% for experience in experiences%}
+              <p class="experiencemarker" onclick="setToActiveMarker(this)">{{experience.shortname}}</p>
+              {% endfor %}
+            </div>
+          </div>
+          <div id="desktopexpwrapper">
+            <div class="descriptionwrapper center" id="expdescription">
+              <div class="center imgwrapper">
+                <img id="expimgdesktop" src="{% static ''|add:experiences.0.imageurl %}" />
+              </div>
+            </div>
+            <div class="descriptionwrapper" id="expdescription">
+              <div class="titlelistwrapper">
+                <p class="name"><span class="exptitle">{{ experiences.0.title}}</span> <br> <span class="atsign" style="color: var(--other-accent-2);">@</span> <span class="expname"  style="color: var(--other-accent-2);">{{ experiences.0.name}}</span></p>
+                <ul class="expdesclist"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="projectsmarker" style="height: 25px;"></div>
+    <div class="center fade">
+      <div class="center sectiontitle bordertop">
+        <p class="titlewrapper"><span class="title highlight">4. </span><span class="title textcolor">Projects</span></p>
+        <div class="titlebackground"style=""></div>
+      </div>
+    </div>
+    <div class="projectsmarker"></div>
+    <div class="center fade">
+      <div id="projects" class="center">
+        <div id="projwrapper">
+          {% for project in projects%}
+          <div id="{{project.name}}" class="center projectimgwrapper" onclick="setToActiveProj(this)">
+            <img src="{% static ''|add:project.imageurl %}" />
+            <p class="projlabel">{{project.shortname}}</p>
+          </div>
+          {%endfor%}
+        </div>
+      </div>
+    </div>
+    <div id="projectsmobile" class="fade">
+      <div class="center">
+        <div class="selectionmenuproj">
+          <div class="descriptionwrapper center" id="projdescription">
+            <div class="center imgwrapper">
+              <img id="projimg" src="{% static ''|add:projects.0.imageurl %}" />
+            </div>
+            <div class="projtextwrapper">
+              <p class="name"><span class="projtitle">{{ projects.0.name}}</span></p>
+              <p class="name"><span class="projtimespan" style="color: var(--other-accent-2);">Developed: {{ projects.0.timespan}}</span></p>
+              <p class="projdesc">{{projects.0.description}}</p>
+              <div class="center"><ul class="projskilllist"></ul></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contactsmarker" style="height: 25px;"></div>
+    <div class="center fade">
+      <div class="center sectiontitle bordertop">
+        <p class="titlewrapper"><span class="title highlight">5. </span><span class="title textcolor">Contact</span></p>
+        <div class="titlebackground"style=""></div>
+      </div>
+    </div>
+    <div class="contactsmarker"></div>
+    <div id="contacts" class="fade">
+      <div class="center">
+        <div class="contactwrapper">
+          <p class="contactlabel">I'd love to speak with you about my experience, projects, or anything else!</p>
+          <div id="contacticons">
+            {%for contact in contacts%}
+            <div class="contimgwrapper">
+              <img class="contactimg" src="{{contact.imageurl}}" onclick="location.href = '{{contact.link}}';"/>
+            </div>
+            {%endfor%}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="bottomspacer" style="min-height: 100px;">
+      
+    </div>
+    
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- Anime.js library-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+    <!-- Menu Animation -->
+    <script src="{% static 'website/js/jslibrary.js' %}"> </script>
+
+    <!-- Consolidate django vars into js accessible -->
+    <script>
+      var DJANGO_STATIC_URL = '{{static_url}}'
+      var expjson = JSON.parse("{{expjson|escapejs}}");
+      var projjson = JSON.parse("{{projjson|escapejs}}");
+      var updatingExperience = false;
+      var updatingProj = false;
+    </script>
+  </body>
+</html>
