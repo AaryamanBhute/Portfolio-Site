@@ -806,7 +806,7 @@ fieldset { border-top:1px solid var(--main-text-color); }
   bottom: 0px;
   position: absolute;
   background-color: var(--offer-shade);
-  width: 120px;
+  width: 80%;
   text-align: center;
   transition: all 0.5s ease 0.1s!important;
   font-size: 1.5em;
