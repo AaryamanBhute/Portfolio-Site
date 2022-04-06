@@ -76,9 +76,25 @@ WSGI_APPLICATION = 'personalsite.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
+    #'default': {
+    #    'ENGINE': 'django.db.backends.sqlite3',
+    #    'NAME': BASE_DIR / 'db.sqlite3',
+    #},
+    #'default': {
+    #    'ENGINE': 'django.db.backends.postgresql',
+    #    'NAME': 'sitedatabase', # The Server name from 1.5
+    #    'USER': 'postgres', # The username from 1.6
+    #    'PASSWORD': 'yolo2330', # The password from installation
+    #    'HOST': 'localhost', # Host name/address from 1.6,
+    #    'PORT': '5432' # Port from 1.6
+    #}
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'dav2p4s9gjga2l',
+        'USER': 'fljcyiaotqunqn',
+        'PASSWORD': 'fbb62b36655ba46b34e3a5cc893c0a5b4d0f2c6325c23f7808441c0a50ea346f',
+        'HOST': 'ec2-34-195-143-54.compute-1.amazonaws.com',
+        'PORT':  '5432'
     }
 }
 
