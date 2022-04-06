@@ -506,7 +506,7 @@ fieldset { border-top:1px solid var(--main-text-color); }
 }
 
 .entrywrapper{
-  width: 80%;
+  width: 75%;
 }
 
 .alignleft{
@@ -695,6 +695,7 @@ fieldset { border-top:1px solid var(--main-text-color); }
 .paddingwrapper{
   overflow-x: auto;
   padding: 10px;
+  width: 100%;
 }
 #skills{
   columns: 2;
