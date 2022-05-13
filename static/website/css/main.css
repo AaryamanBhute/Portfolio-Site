@@ -1108,10 +1108,10 @@ p.projlabel{
     margin-bottom: 80px;
   }
   .selectionmenu{
-    width: 75%;
+    width: 65%;
   }
   .selectionmenuproj{
-    width: 75%;
+    width: 65%;
     display: flex;
   }
   #projdescription{

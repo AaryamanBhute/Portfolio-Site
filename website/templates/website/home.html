@@ -164,7 +164,7 @@
         <div class="selectionmenu">
           <div class="paddingwrapper">
             <div class="selectionnav" id="mobilenav">
-              {% for experience in experiences%}
+              {% for experience in experiences reversed%}
               <p class="experiencemarker" onclick="setToActiveMarker(this)">{{experience.shortname}}</p>
               {% endfor %}
             </div>
@@ -172,10 +172,10 @@
           
           <div class="descriptionwrapper center" id="expdescription">
             <div class="center imgwrapper">
-              <img id="expimg" onclick="location.href = '{{experiences.0.link}}';" src="{{experiences.0.imageurl}}" />
+              <img id="expimg" onclick="location.href = '{{experiences.last.link}}';" src="{{experiences.last.imageurl}}" />
             </div>
             <div class="titlelistwrapper">
-              <p class="name"><span class="exptitle">{{ experiences.0.title}}</span> <br> <span class="atsign" style="color: var(--other-accent-2);">@</span> <span class="expname"  style="color: var(--other-accent-2);">{{ experiences.0.name}}</span></p>
+              <p class="name"><span class="exptitle">{{ experiences.last.title}}</span> <br> <span class="atsign" style="color: var(--other-accent-2);">@</span> <span class="expname"  style="color: var(--other-accent-2);">{{ experiences.last.name}}</span></p>
               <ul class="expdesclist"></ul>
             </div>
             
@@ -188,7 +188,7 @@
         <div class="selectionmenu">
           <div class="paddingwrapper">
             <div class="selectionnav" id="mobilenav">
-              {% for experience in experiences%}
+              {% for experience in experiences reversed%}
               <p class="experiencemarker" onclick="setToActiveMarker(this)">{{experience.shortname}}</p>
               {% endfor %}
             </div>
@@ -196,12 +196,12 @@
           <div id="desktopexpwrapper">
             <div class="descriptionwrapper center" id="expdescription">
               <div class="center imgwrapper">
-                <img id="expimgdesktop" src="{{experiences.0.imageurl}}" />
+                <img id="expimgdesktop" src="{{experiences.last.imageurl}}" />
               </div>
             </div>
             <div class="descriptionwrapper" id="expdescription">
               <div class="titlelistwrapper">
-                <p class="name"><span class="exptitle">{{ experiences.0.title}}</span> <br> <span class="atsign" style="color: var(--other-accent-2);">@</span> <span class="expname"  style="color: var(--other-accent-2);">{{ experiences.0.name}}</span></p>
+                <p class="name"><span class="exptitle">{{ experiences.last.title}}</span> <br> <span class="atsign" style="color: var(--other-accent-2);">@</span> <span class="expname"  style="color: var(--other-accent-2);">{{ experiences.last.name}}</span></p>
                 <ul class="expdesclist"></ul>
               </div>
             </div>
@@ -220,7 +220,7 @@
     <div class="center fade">
       <div id="projects" class="center">
         <div id="projwrapper">
-          {% for project in projects%}
+          {% for project in projects reversed%}
           <div id="{{project.name}}" class="center projectimgwrapper" onclick="setToActiveProj(this)">
             <img src="{{project.imageurl}}" />
             <p class="projlabel">{{project.shortname}}</p>
@@ -234,12 +234,12 @@
         <div class="selectionmenuproj">
           <div class="descriptionwrapper center" id="projdescription">
             <div class="center imgwrapper">
-              <img id="projimg" src="{{projects.0.imageurl}}" />
+              <img id="projimg" src="{{projects.last.imageurl}}" />
             </div>
             <div class="projtextwrapper">
-              <p class="name"><span class="projtitle">{{ projects.0.name}}</span></p>
-              <p class="name"><span class="projtimespan" style="color: var(--other-accent-2);">Developed: {{ projects.0.timespan}}</span></p>
-              <p class="projdesc">{{projects.0.description}}</p>
+              <p class="name"><span class="projtitle">{{ projects.last.name}}</span></p>
+              <p class="name"><span class="projtimespan" style="color: var(--other-accent-2);">Developed: {{ projects.last.timespan}}</span></p>
+              <p class="projdesc">{{projects.last.description}}</p>
               <div class="center"><ul class="projskilllist"></ul></div>
             </div>
           </div>
